@@ -2,11 +2,11 @@
 exports.up = function(knex) {
   return knex.schema.createTable('students', function(table){
       table.increments()
-      table.string('name').notnullable()
-      table.string('email').notnullable()
-      table.string('cpf').notnullable()
-      table.string('nationality').notnullable()
-      table.string('numberPhone').notnullable()
+      table.string('name').notNullable()
+      table.string('email').notNullable()
+      table.string('cpf').notNullable()
+      table.string('nationality').notNullable()
+      table.string('numberPhone').notNullable()
   })
 };
 //down = se der errado oq fazer, deletar a tabela
