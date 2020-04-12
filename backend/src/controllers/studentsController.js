@@ -2,11 +2,29 @@ const connection = require('../database/connection')
 
 module.exports = {
     async index(req, res) {
-        const students = await connection('students').select('*')
+        const { page = 1} = req.query
+        
+        const [count] = await connection('students').count()
+        
+        const students = await connection('students')
+          .limit(5)
+          .offset((page - 1)* 5)
+          .select('*')
+
+        res.header('X-total-Count', count['count(*)'])
 
         return res.json(students)
     },
 
+    async ListStudent(req, res) {
+        const { cpf } = req.params
+
+        const student = await connection('students')
+          .where('cpf', cpf)
+          .select('*')
+
+        return res.json(student)
+    },
 
     async create(req, res) {
         const {name, email, cpf, nationality, numberPhone} = req.body //corpo da requisição
@@ -20,5 +38,15 @@ module.exports = {
         })
 
         return res.json({ name })
+    },
+
+    async delete(req, res) {
+        const { cpf } = req.params 
+
+        await connection('students')
+          .where('cpf', cpf)
+          .delete()
+
+        return res.status(204).send()
     }
 }
