@@ -48,5 +48,21 @@ module.exports = {
           .delete()
 
         return res.status(204).send()
-    }
+    },
+
+    // async update(req, res){
+    //     const {name, email, cpf, nationality, numberPhone} = req.body
+        
+
+    //     await connection('students')
+    //       .where('cpf', cpf)
+    //       .update({
+    //         name,
+    //         email, 
+    //         cpf, 
+    //         nationality, 
+    //         numberPhone
+    //   })
+    //     return res.json({ name })
+    // }
 }

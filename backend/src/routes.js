@@ -11,5 +11,6 @@ routes.get('/students', studentsController.index)
 routes.get('/students/:cpf', studentsController.ListStudent)
 routes.post('/students', studentsController.create)
 routes.delete('/students/:cpf', studentsController.delete)
+// routes.put('/students/:cpf', studentsController.update)
 
 module.exports = routes
