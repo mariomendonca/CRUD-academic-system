@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: #1c1c1c;
+    color: #B22222;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 100px;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
+
+.RegisterBtn {    
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    background: #1c1c1c;
+    color: #B22222;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 100px;
+}

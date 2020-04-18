@@ -8,7 +8,7 @@ export default function Home() {
           <div className='header'>
           
             <h2>Academic System</h2>
-            <h4>by: Mario Mendonca, using React and nodejs</h4>
+            <h4>by: Mario Mendonça, using React and nodejs</h4>
 
           </div>
           <div className="content">
