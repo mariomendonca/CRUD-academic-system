@@ -33,5 +33,18 @@
     color: #B22222;
     align-items: center;
     padding: 15px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
+
+/* .create-container .content{
+    width: 800px;
+    height: 600px;
+    padding: 96px;
+    background:#1c1c1c ;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.1);
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
