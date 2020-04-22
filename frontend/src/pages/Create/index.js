@@ -28,7 +28,7 @@ export default function Create() {
                 <input placeholder="Cpf"/>
                 <input placeholder="Nationality"/>
                 <input placeholder="Number Phone"/>
-                <button className='RegisterBtn'>Register</button>
+                <button className='RegisterBtn' type='submit'>Register</button>
             </form>
             </div>
         </div>

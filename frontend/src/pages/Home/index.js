@@ -1,8 +1,26 @@
 import React from 'react'
-
+import { useHistory  } from "react-router-dom"
 import './styles.css'
 
 export default function Home() {
+    const history = useHistory()
+
+    function toCreate(){
+      history.push('/create')
+    }
+    
+    function toList(){
+      history.push('/list')
+    }
+
+    function toUpdate(){
+      history.push('/update')
+    }
+
+    function toDelete(){
+      history.push('/delete')
+    }
+
     return (
         <div className="home-container">
           <div className='header'>
@@ -13,10 +31,10 @@ export default function Home() {
           </div>
           <div className="content">
          
-              <button className='button'>Create</button>
-              <button className='button'>List</button>
-              <button className='button'>Update</button>
-              <button className='button'>Delete</button>
+              <button className='button' onClick={toCreate} >Create</button>
+              <button className='button' onClick={toList}>List</button>
+              <button className='button' onClick={toUpdate}>Update</button>
+              <button className='button' onClick={toDelete}>Delete</button>
            
           </div>
         </div>
