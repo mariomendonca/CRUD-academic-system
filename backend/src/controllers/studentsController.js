@@ -2,14 +2,15 @@ const connection = require('../database/connection')
 
 module.exports = {
     async index(req, res) {
-        const { page = 1} = req.query
+        // const { page = 1} = req.query
         
         const [count] = await connection('students').count()
         
         const students = await connection('students')
-          .limit(5)
-          .offset((page - 1)* 5)
-          .select('*')
+        .select('*')
+        // .limit(5)
+        // .offset((page - 1)* 5)
+        // paginaçao
 
         res.header('X-total-Count', count['count(*)'])
 

@@ -6,7 +6,7 @@
 
 .content{
     width: 100%;
-    max-width: 1180px;
+    max-width: 1000px;
     padding: 0;
 }
 
@@ -64,11 +64,7 @@ strong{
 }
 
 li p{
-    color: #41414d;
-}
-
-li p + strong{
-    margin-top: 32px;
+    color: white;
 }
 
 .title-list{
