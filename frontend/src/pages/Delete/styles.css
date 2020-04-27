@@ -1,0 +1,22 @@
+.content{
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    background-color:#B22222 ;
+}
+
+.cpfInput {
+    font: 400 18px Dosis, sans-serif;
+    margin: 5px;
+    border-radius: 8px;
+    border: 0;
+    height: 40px;
+    width: 70%;
+    max-width:400px ;
+    padding: 10px;
+}
