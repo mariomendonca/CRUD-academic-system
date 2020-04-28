@@ -47,19 +47,19 @@ export default function List(){
                         {students.map(student => (
                             <li key={student.id}>
                                 <strong>NAME:</strong>
-                                <p>{student.name}:</p>
+                                <p>{student.name}</p>
 
                                 <strong>E-MAIL:</strong>
-                                <p>{student.email}:</p>
+                                <p>{student.email}</p>
 
                                 <strong>CPF:</strong>
-                                <p>{student.cpf}:</p>
+                                <p>{student.cpf}</p>
 
                                 <strong>NATIONALITY:</strong>
-                                <p>{student.nationality}:</p>
+                                <p>{student.nationality}</p>
 
                                 <strong>NUMBER PHONE:</strong>
-                                <p>{student.numberPhone}:</p>                                
+                                <p>{student.numberPhone}</p>                                
                             </li>
                         ))}
                     </ul>

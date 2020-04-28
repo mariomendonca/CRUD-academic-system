@@ -31,6 +31,7 @@ export default function Delete(){
                         back to menu
                 </Link>
             </section>
+            <form onSubmit={() => handleDelete(cpf)}>
                 <div className="delete" >
                     <input
                       className='cpfInput'
@@ -40,12 +41,12 @@ export default function Delete(){
                     />
                     <button 
                       className='search-btn'
-                      onClick={() => handleDelete(student.cpf)}
+                      type='submit'
                       ><FiSearch/>
                     </button>
 
                 </div>
-            <h1>oi</h1>
+            </form>
             </div>
             
        </div>
